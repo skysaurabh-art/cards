@@ -9,3 +9,9 @@ def validloanobject(loanobject):
         return True
     else:
         return False
+
+def validclientobject(clientobject):
+    if "client_name" in clientobject and "client_acct_no" in clientobject  and "branch_id" in clientobject and "curr_clos_bal" in clientobject and "cred_hist_len" in clientobject and "has_card" in clientobject and "has_acct" in clientobject: 
+        return True
+    else:
+        return False
